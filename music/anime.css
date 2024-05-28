@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: white;
+    color: white;
+}
+
+.header {
+    background-color: pink;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px white;
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s;
+}
+
+.logo:hover {
+    color: #E8DCB5;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav ul li {
+    margin-left: 1rem;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav ul li a:hover {
+    background-color: #E8DCB5;
+    color: #fff;
+}
+
+.hero {
+    background-image: url("portfolio.jpg");
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.anime-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.anime-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.anime-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.anime-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.anime-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.anime-info h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #E8DCB5;
+}
+
+.anime-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.footer {
+    background-color: pink;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #ddd;
+    margin-top: 2rem;
+}
